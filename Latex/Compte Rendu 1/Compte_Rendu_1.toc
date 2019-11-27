@@ -1,0 +1,14 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {nil}{}
+\contentsline {chapter}{Contents}{1}{chapter*.1}% 
+\contentsline {part}{I\hspace {1em}Partie de groupe}{2}{part.2}% 
+\contentsline {part}{II\hspace {1em}Thomas ABGRALL}{3}{part.3}% 
+\contentsline {chapter}{\numberline {1}Motorisation}{4}{chapter.4}% 
+\contentsline {section}{\numberline {1.1}Placement des moteurs}{4}{section.5}% 
+\contentsline {section}{\numberline {1.2}Choix des moteurs}{6}{section.10}% 
+\contentsline {section}{\numberline {1.3}Contrôle des moteurs}{6}{section.12}% 
+\contentsline {section}{\numberline {1.4}Présentation du code}{7}{section.14}% 
+\contentsline {section}{\numberline {1.5}En soutien}{8}{section.15}% 
+\contentsline {part}{III\hspace {1em}Clément CALLIAU}{9}{part.16}% 
+\contentsline {part}{IV\hspace {1em}Jerome MAURY}{10}{part.17}% 
+\contentsline {part}{V\hspace {1em}Eric REBILLON}{11}{part.18}% 
