@@ -1,6 +1,6 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {french}{}
-\contentsline {chapter}{Table des matières}{1}{chapter*.1}% 
+\babel@toc {nil}{}
+\contentsline {chapter}{Contents}{1}{chapter*.1}% 
 \contentsline {part}{I\hspace {1em}Partie de groupe}{2}{part.2}% 
 \contentsline {chapter}{\numberline {1}Cahier des charges}{3}{chapter.3}% 
 \contentsline {section}{\numberline {1.1}Introduction}{3}{section.4}% 
