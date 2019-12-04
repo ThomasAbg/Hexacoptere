@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2019.9.30)  27 NOV 2019 17:05
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2019.9.30)  4 DEC 2019 13:46
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1362,7 +1362,7 @@ LaTeX Info: Redefining \pageref on input line 6454.
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of hyperref version, that doesn't
-(scrhack)             need that hack, on input line 56.
+(scrhack)             need that hack, on input line 61.
 Package hyperref Info: Driver (autodetected): hxetex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
@@ -1388,17 +1388,17 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip92
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 56.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 56.
-Package hyperref Info: Option `colorlinks' set `true' on input line 56.
-Package hyperref Info: Option `unicode' set `true' on input line 56.
-Package hyperref Info: Option `breaklinks' set `true' on input line 56.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 61.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 61.
+Package hyperref Info: Option `colorlinks' set `true' on input line 61.
+Package hyperref Info: Option `unicode' set `true' on input line 61.
+Package hyperref Info: Option `breaklinks' set `true' on input line 61.
 Package biblatex Info: Trying to load language 'nil'...
 Package biblatex Info: ... file 'nil.lbx' not found.
 
 
 Package biblatex Warning: Language 'nil' not supported.
-(biblatex)                Using fallback language 'english' on input line 56.
+(biblatex)                Using fallback language 'english' on input line 61.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -1412,33 +1412,35 @@ runsystem(which pygmentize && touch Compte_Rendu_1.aex)...executed.
 runsystem(rm Compte_Rendu_1.aex)...executed.
 
 
-No file Compte_Rendu_1.aux.
+(./Compte_Rendu_1.aux (./Chapters/Chapter1.aux)
+(./Chapters/Abgrall/Chapter1.aux))
 \openout1 = `Compte_Rendu_1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 61.
+
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1492,7 +1494,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package scrlayer Info: Setting magic \footheight to \baselineskip while
-(scrlayer)             \begin{document} on input line 56.
+(scrlayer)             \begin{document} on input line 61.
 Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
@@ -1505,14 +1507,14 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Compte_Rendu_1.bbl' not found.
 No file Compte_Rendu_1.bbl.
-Package biblatex Info: Reference section=0 on input line 56.
-Package biblatex Info: Reference segment=0 on input line 56.
+Package biblatex Info: Reference section=0 on input line 61.
+Package biblatex Info: Reference segment=0 on input line 61.
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 )
 \AtBeginShipoutBox=\box72
-Package hyperref Info: Link coloring ON on input line 56.
+Package hyperref Info: Link coloring ON on input line 61.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1522,51 +1524,50 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count472
 )
-LaTeX Info: Redefining \ref on input line 56.
-LaTeX Info: Redefining \pageref on input line 56.
-LaTeX Info: Redefining \nameref on input line 56.
+LaTeX Info: Redefining \ref on input line 61.
+LaTeX Info: Redefining \pageref on input line 61.
+LaTeX Info: Redefining \nameref on input line 61.
+
+(./Compte_Rendu_1.out) (./Compte_Rendu_1.out)
 \@outlinefile=\write6
 \openout6 = `Compte_Rendu_1.out'.
 
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 61.
 
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 56.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 56.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 61.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 56.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 61.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 56.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 61.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 56.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 61.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 1: section
-File: ./Figures/estei.png Graphic file (type bmp)
-<./Figures/estei.png>
+File: ./Figures/logo_ynov_campus_rvb.png Graphic file (type bmp)
+<./Figures/logo_ynov_campus_rvb.png>
 ! Undefined control sequence.
 <recently read> \groupname 
                            
-l.100 ...e\LARGE \univname}\\\deptname\\\groupname
+l.105 ...e\LARGE \univname}\\\deptname\\\groupname
                                                   \\[1cm]
 ? 
 
@@ -1576,14 +1577,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.100 ...LARGE \univname}\\\deptname\\\groupname\\
+l.105 ...LARGE \univname}\\\deptname\\\groupname\\
                                                   [1cm]
 ? 
 [1
 
 
 
-]
+] (./Compte_Rendu_1.toc)
 \tf@toc=\write7
 \openout7 = `Compte_Rendu_1.toc'.
 
@@ -1593,7 +1594,7 @@ l.100 ...LARGE \univname}\\\deptname\\\groupname\\
 LaTeX Font Info:    Font shape `TU/TeXGyrePagella(0)/m/sl' in size <10.95> not 
 available
 (Font)              Font shape `TU/TeXGyrePagella(0)/m/it' tried instead on inp
-ut line 120.
+ut line 125.
 [1
 
 ]
@@ -1605,161 +1606,48 @@ ut line 120.
 
 
 No file Chapters/Chapter1.tex.
+\openout2 = `Chapters/Abgrall/Chapter1.aux'.
+
+(./Chapters/Abgrall/Chapter1.tex
+Chapter 1.
+File: ./Figures/FaussePhotoDrone.png Graphic file (type bmp)
+<./Figures/FaussePhotoDrone.png>
 1: section
 [3
 
 
 
-]
-\openout2 = `Chapters/Abgrall/Chapter1.aux'.
-
- (./Chapters/Abgrall/Chapter1.tex
-Chapter 1.
-File: ./Figures/Axe_rotation_telescope.png Graphic file (type bmp)
-<./Figures/Axe_rotation_telescope.png>
-File: ./Figures/illustration_rotation.png Graphic file (type bmp)
-<./Figures/illustration_rotation.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--38
-
- []
-
-1: section
-[4
-
 
 ]
-File: ./Figures/Placement_moteur_inclinaison.png Graphic file (type bmp)
-<./Figures/Placement_moteur_inclinaison.png>
-File: ./Figures/Illistration_moteur_zoom.png Graphic file (type bmp)
-<./Figures/Illistration_moteur_zoom.png>
-
-Overfull \hbox (1.70181pt too wide) in paragraph at lines 63--66
-\TU/TeXGyrePagella(0)/m/n/10.95 bout (miroire, zoom, caméra, moteur pour le zoo
-m, fixation) nous avons estimé que le moteur
- []
-
-[5]
-File: ./Figures/moteur.jpg Graphic file (type bmp)
-<./Figures/moteur.jpg>
-
-Overfull \hbox (9.60402pt too wide) in paragraph at lines 79--80
-\TU/TeXGyrePagella(0)/m/n/10.95 Pour contrôler le moteur nous avons choisi le c
-omposant ”A4988 Stepper Motor Driver Carrier”.
- []
-
-
-Overfull \hbox (2.81021pt too wide) in paragraph at lines 79--80
-\TU/TeXGyrePagella(0)/m/n/10.95 pas, huitième de pas et seizième de pas. Il y a
- également une pin activation et endormissement
- []
-
-File: ./Figures/controleur.jpg Graphic file (type bmp)
-<./Figures/controleur.jpg>
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 94--106
-
- []
-
-
-Overfull \hbox (4.2166pt too wide) in paragraph at lines 94--106
-\TU/TeXGyrePagella(0)/m/n/10.95 Lors de l’initialisation du drive l’interruptio
-ns de chacun des interrupteurs se mette en service,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--106
-
- []
-
-
-Overfull \hbox (10.62479pt too wide) in paragraph at lines 94--106
-\TU/TeXGyrePagella(0)/m/n/10.95 Le contrôle des moteurs rotation et inclinaison
- sont réalisés. Les interruptions des interrupteurs
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--106
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--106
-
- []
-
-
-Overfull \hbox (2.58505pt too wide) in paragraph at lines 109--112
-\TU/TeXGyrePagella(0)/m/n/10.95 Pour cela j’ai démarché plusieures entreprises 
-dans le domaine de l’optique tel que STEMMER
- []
-
-[7]) [8]
-1: section
-[9
-
-
-]
-\openout2 = `Chapters/Calliau/Chapter1.aux'.
-
- (./Chapters/Calliau/Chapter1.tex)
-1: section
-[10
-
-
-
-]
-\openout2 = `Chapters/Maury/Chapter1.aux'.
-
- (./Chapters/Maury/Chapter1.tex)
-1: section
-[11
-
-
-
-]
-\openout2 = `Chapters/Rebillon/Chapter1.aux'.
-
- (./Chapters/Rebillon/Chapter1.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 139.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 139.
- (./Compte_Rendu_1.aux
-(./Chapters/Chapter1.aux) (./Chapters/Abgrall/Chapter1.aux)
-(./Chapters/Calliau/Chapter1.aux) (./Chapters/Maury/Chapter1.aux)
-(./Chapters/Rebillon/Chapter1.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 139.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 139.
-
-
-Package rerunfilecheck Warning: File `Compte_Rendu_1.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Compte_Rendu_1.out':
-(rerunfilecheck)             Before: 
-(rerunfilecheck)             After:  B71F690AD8042DB7D4F27F8A7673DF2C.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                Compte_Rendu_1
-(biblatex)                and rerun LaTeX afterwards.
-
+File: ./Figures/tab_exigences.png Graphic file (type bmp)
+<./Figures/tab_exigences.png>
+ [4]
+! Missing } inserted.
+<inserted text> 
+                }
+l.87 ^^I\end{itemize}
+                     
+? 
+) [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
+ (./Compte_Rendu_1.aux (./Chapters/Chapter1.aux)
+(./Chapters/Abgrall/Chapter1.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 144.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
+Package rerunfilecheck Info: File `Compte_Rendu_1.out' has not changed.
+(rerunfilecheck)             Checksum: A26E3450CA2B552E1BA4F26506B3CBF0.
 Package logreq Info: Writing requests to 'Compte_Rendu_1.run.xml'.
 \openout1 = `Compte_Rendu_1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40188 strings out of 494868
- 852698 string characters out of 6175715
- 1217624 words of memory out of 5000000
- 43688 multiletter control sequences out of 15000+600000
- 540057 words of font info for 81 fonts, out of 8000000 for 9000
+ 40180 strings out of 494868
+ 852276 string characters out of 6175715
+ 1216847 words of memory out of 5000000
+ 43685 multiletter control sequences out of 15000+600000
+ 540081 words of font info for 84 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  57i,19n,79p,803b,4079s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Compte_Rendu_1.pdf (12 pages).
+Output written on Compte_Rendu_1.pdf (6 pages).

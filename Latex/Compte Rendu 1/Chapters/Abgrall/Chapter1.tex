@@ -1,113 +1,99 @@
-\chapter{Motorisation}
+\chapter{Cahier des charges}
 \label{chapter1}
 
-Le projet repose sur un projet de telescope manuel, qui devait être placé à la main pour viser les étoiles.
-Nous allons voire ici les choix et mises en oeuvre réalisé pour automatiser notre télescope.
+%Introduction
+%Spécifications techniques
+%	en résumé
+%Organisation > répartition, trello, github, slack
+%étude de solutions techniques
 
-\section{Placement des moteurs}
 
-Le télescope est composé de deux axes à automatiser: la rotation et l'inclinaison. 
+\section{Introduction}
 
-\begin{figure}[H]
-    \centering
-	\includegraphics[width=0.49\linewidth]{\figures/Axe_rotation_telescope.png}
-    \decoRule
-    \caption[
-    Illustration des axes telescope]{
-    Illustration des axes telescope}
-    \label{fig:Illustration des axes telescope}
-    \end{figure}
+Le but de ce projet est de réaliser un drone à 6 moteurs "Hexacoptère".  Ce dernier embaquera une nacelle, support pour une caméra.
 
-Pour mouvoir le telescope en rotation, nous avons choisi de placer un moteur sur la couronne fixe à la base du telescope. Qui ce dernier ferai tourner la couronne du dessus qui sera équipée d'une courroie sur ça face intérieure. 
+\vspace{1cm}
+Ce projet est la reprise du projet Hexacoptère qui fut initié par un groupe de 6 étudiants il y a 3 ans.  Ces derniers ont réaliser la base 3D du drone et ont réaliser le placement et câblage des moteurs avec leur controleur moteur.
 
 \begin{figure}[H]
-    \centering
-	\includegraphics[width=0.49\linewidth]{\figures/illustration_rotation.png}
+	\centering
+    \includegraphics[width=0.8\linewidth]{\figures/FaussePhotoDrone.png}
     \decoRule
     \caption[
-    Illustration placement moteur rotation]{
-    Illustration placement moteur rotation}
-    \label{fig:Illustration placement moteur rotation}
-    \end{figure}
-    
-Avant de choisir cette soluction nous avions réfléchi sur plusieurs autres. Nous avions envisagé de placer une courroie sur la face intérieur du croissant. La forme non-circulaire de l'interieur du croissant empêche de placer un axe FIXE pour entrainer une courroie car la forme du croissant va rapprocher la courroie de l'arbre du moteur durant ça progression.
-Une autre solution visée à placer le moteur au centre de la courroie, cependant nous avons conclus que la surface sur laquelle va s'appliquer la force du moteur est plus petite que dans la solution que nous avons retenue.
-\newline
-\newline
-Pour agir sur l'inclinaison, nous relions les deux barres qui maintiennent les croissants avec une courroie. Elle sera tendu grâce à l'arbre du moteur et un pignion. Le tout sera placé entre des deux croissants, sous le miroire principale.
+    Photo d'un hexacoptère]{
+    Photo d'un hexacoptère}
+    \label{fig:Photo d'un hexacoptère   }
+	\end{figure}
 
+
+\section{Spécifications techniques}
+
+Malgrès que le projet ai été commencé par un précèdent groupe, la majorité du travail reste à faire (80\%). Leur travail s'appuya sur un cahier des charge, ce dernier nous a été partagé directement, mais sans modification. Le delai, ressources ont changer avec notre équipe. 
+Nous avons été amené à réaliser des choix techniques et avons décidé de mettre en faible priorété certaines fonctionnalitées afin de pouvoir rendre une réalisation cohérente dans le temps qui nous a été imposé.
+
+\subsection{Fonctionnalités obligatoires}
+
+L'hexacoptère devra être capable de décoller de manière stabilisé. Cette action devra pouvoir être lancer à partir d'un télécommande. \newline 
+Cette dernière devra pouvoir envoyer les ordres de déplacement au drone.  Un retour video sur un écran est envisagé.
+
+\vspace{1cm}
+Le drone embarquera une nacelle permettant de supporter et orienté une caméra. \newline
+Il disposera d'une caméra permettant de prendre des clichés, et vidéo.
+
+\vspace{1cm}
+Concernant le contrôle du drône, une télécommande sera développé afin d'envoyer les ordres de déplacement au drone. La télécommande pourrait un retour vidéo, pour visualisé ce que filme le drone, ou se que le drone prend en photo.
+
+\vspace{1cm}
+L'autonomie du drône fait partie des points critique. En fonction des moteurs imposés et de la technologie de baterrie également imposé nous essaierons de rendre le système le plus autonome possible.
+
+\subsection{Fonctionnalités envisagées}
+
+Le vol stabilité et le contrôle manuel de la caméra est envisagé mais ne fairons pas partie des fonctionnalité prioritaire. Elles seront étudier et développé une fois les fonction de base terminé et validé. Tout comme le contrôle de la caméra et le retour vidéo.
+
+\subsection{Matériel}
+
+La base du drone ayant déjà était conçu, nous la réutiliseront. \newline
+La carte chargé de la supervision du drone sera une STM32F4. \newline
+Le contrôle des moteurs disposera  d'une carte STM32.
+Afin de contrôler le dronee à distance la télécommande sera réalisé à partir d'une Raspberry Pi 3, et comme la carte de supervision du drone la Raspberry disposera d'un module émetteur/recepteur radio fréquence. 
+
+
+\subsection{Résumé des exigences}
 \begin{figure}[H]
-    \centering
-	\includegraphics[width=0.49\linewidth]{\figures/Placement_moteur_inclinaison.png}
+	\centering
+    \includegraphics[width=0.7\linewidth]{\figures/tab_exigences.png}
     \decoRule
     \caption[
-    Illustration placement moteur inclinaison]{
-    Illustration placement moteur inclinaison}
-    \label{fig:Illustration placement moteur inclinaison}
-    \end{figure}
-    
-Il nous reste ensuite une dernière chose à automatiser, le zoom. Le zoom sera placé entre le miroire secondaire et la caméra. Il sera entouré par une courroie qui fera le lien entre le zoom et une autre courroie entrainé par le moteur zoom.
-
-\begin{figure}[H]
-    \centering
-	\includegraphics[width=0.49\linewidth]{\figures/Illistration_moteur_zoom.png}
-    \decoRule
-    \caption[
-    Illistration moteur zoom]{
-    Illistration moteur zoom}
-    \label{fig:Illistration moteur zoom}
-    \end{figure}
-
-\section{Choix des moteurs}
-
-D'après la quantité de matière au bout du télescope,et les matériels qui seront installés au bout (miroire, zoom, caméra, moteur pour le zoom, fixation) nous avons estimé que le moteur doit pouvoir soulever au minimum 4 kilogrammes.
-Nous avons donc choisi le moteur de référence: 17HM15-0904S pour ça puissance et son coût. De plus nous disposions d'un tel moteur, avec lequel nous avons pu réaliser des testes pour nous assurer qu'il réponde bien à notre cahier des charges.
-Le moteur du zoom a besoin de moins d'énergie pour agir sur le zoom, nous avons donc choisi un moteur moins puissant, celui retenu est le S20TH30-0604A.
-
-\begin{figure}[H]
-    \centering
-	\includegraphics[width=0.49\linewidth]{\figures/moteur.jpg}
-    \decoRule
-    \caption[
-    Photo du moteur]{
-    Photo du moteur}
-    \label{fig:Photo du moteur}
-    \end{figure}
-    
-\section{Contrôle des moteurs}
-
-Pour contrôler le moteur nous avons choisi le composant "A4988 Stepper Motor Driver Carrier". Il permet de contrôler la rotation du moteur, choisir entre le mode pas, demi-pas, quart de pas, huitième de pas et seizième de pas. Il y a également une pin activation et endormissement mais que nous n'utiliserons pas.
-
-\begin{figure}[H]
-    \centering
-	\includegraphics[width=0.49\linewidth]{\figures/controleur.jpg}
-    \decoRule
-    \caption[
-    Photo du controleur]{
-    Photo du controleur}
-    \label{fig:Photo du controleur}
-    \end{figure}
+    Tableau récapitulatif des exigences du projet]{
+    Tableau récapitulatif des exigences du projet}
+    \label{fig:Tableau récapitulatif des exigences du projet}
+	\end{figure}
 
 
-\section{Présentation du code}
+\section{Organisation}
 
-Je développe un C un driver linux pour permettre le contrôle des moteurs, mais également de surveiller des interrupteurs, ces derniers serviront de capteur de fin de course. \newline
-Le choix de réaliser un drive linux au lieu d'un logiciel est justifié parcequ'il permettra à un programme en couche supérieure d'utiliser ces fonctions pour mouvoir les moteurs.\newline
-Pour contrôler les moteurs il faut générer une impultion, à chaque front montant le moteur réalise un pas s'il se trouve dans le mode pas à pas, sinon un demi-pas etc. Il faut également choisir le sens de rotation du moteur. \newline \newline
-Fonctionnement: \newline
-Lors de l'initialisation du drive l'interruptions de chacun des interrupteurs se mette en service, dès lors si l'un des interrupteurs placés en fin de course de la rotation s'active alors le moteur de rotation est immédiatement arrêté. Il en est de même pour l'inclinaison. Cette partie est autonome, et ne doit pas être utilisé par des logiciles tiers, c'est une sécurité matérielle. A l'inverse du contrôle des moteurs. Car chaque moteur dispose d'un fonction qui sera appelé par un logiciel tiers pour lancer un moteur sur un certain nombre de pas et dans une certaine direction.
-\newline \newline
-Avancement:\newline
-Le contrôle des moteurs rotation et inclinaison sont réalisés. Les interruptions des interrupteurs de rotations sont également réalisées.
-\newline \newline
-Travail à venir:\newline
-Réalisation du code permettant de contrôler le moteur zoom, et réalisation des interruptions des capteurs fin de course pour l'inclinaison et le zoom. \newline
-Contrôle des modes des moteurs (mode de pas) en fonction de la distance à parcourir. Quand le moteur s'approche de la fin on réduit la taille des pas pour augmenter la précision, afin d'arriver exactement là où il faut.\newline
+%outils
+%répartition du travail
 
-\section{En soutien}
+En tant que groupe de quatre personne, nous avons choisi de travailler en appliquant les méthodes agiles. Ainsi la répartition du travail au sein du groupe se fera de façon dynamique en fonction des aptitudes de chacun et de la charge de travail nécessaire pour terminer une tache donnée en un temps imparti.
 
-J'ai participer en soutien dans la partie optique.\newline
-Pour cela j'ai démarché plusieures entreprises dans le domaine de l'optique tel que STEMMER IMAGING S.A.S dont Alexis Bouras Ingénieur Technico-Commercial / Région Sud-Ouest, ce dernier m'a explique en fonction de nos contraites et materiels ce qu'il nous faut comme technologie réellement. J'ai également pris contact avec un amis travaillant dans le domaine. \newline
-J'en ai conclus qu'il nous faut un zoom variable et qu'une focale variable nous est inutile.
+\vspace{1cm}
+
+Nous avons sélectionné quelques outils pour travailler de façon optimale~:
+\begin{itemize}[label=$\bullet$]
+	\item Messenger comme moyen de communication.
+	%\item {\href{https://trello.com}{Trello}} comme outil de gestion de projet.
+	\item {GitHub comme hébergeur de code source~:\\\url{https://github.com/ThomasAbg/Hexacoptere.git}
+	\end{itemize}
+
+\vspace{1cm}
+
+%À l'issue d'une étude technique préliminaire, nous avons dressé un schéma fonctionnel provisoire du système.
+
+
+%\vspace{1cm}
+
+%Nous avons donc pu trier et organiser les différentes tâches à accomplir et en prioriser certaines représentées en orange sur le diagramme ci-%dessous. Les tâches encadrées de gras sont celles jugées les plus critiques pour l'accomplissement du projet.
+
 
 
